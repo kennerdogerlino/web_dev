@@ -2,10 +2,15 @@
 <html lang="en">
     <head>
         <title>Simple interactive webpage</title>
+        <script>
+            function changeText() {
+                document.getElementById("message").innerHTML = "You js got hackd!";
+            }
+        </script>
     </head>
     <body>
-        <h2>Download free ram for free!:</h2>
-        <p>Hello world!</p>
-        <button>lick me 4 ram</button>
+        <h2>Click to download free ram for free!:</h2>
+        <p id="message">Hello world!</p>
+        <button onclick="changeText()">Click me 4 ram</button>
     </body>
 </html>
